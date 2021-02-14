@@ -6,7 +6,8 @@ spec:
   portal:
     registration:
       enabled: false
-    capacity: 1
+    sessions:
+      maximum: 1
   workshops:
   - name: lab-workshop-deployment
     expires: 3h
