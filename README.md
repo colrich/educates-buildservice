@@ -33,19 +33,19 @@ Deployment
 To load the workshop definition run:
 
 ```
-kubectl apply -f https://raw.githubusercontent.com/eduk8s/lab-workshop-deployment/master/resources/workshop.yaml
+kubectl apply -f https://raw.githubusercontent.com/eduk8s/eduk8s-tutorials/master/resources/lab-workshop-deployment.yaml
 ```
 
 To deploy a training portal for accessing the workshop, run:
 
 ```
-kubectl apply -f https://raw.githubusercontent.com/eduk8s/lab-workshop-deployment/master/resources/training-portal.yaml
+kubectl apply -f https://raw.githubusercontent.com/eduk8s/eduk8s-tutorials/master/resources/training-portal.yaml
 ```
 
 Then run:
 
 ```
-kubectl get trainingportal/lab-workshop-deployment
+kubectl get trainingportal/eduk8s-tutorials
 ```
 
 This will output the URL and login credentials to access the web portal for
@@ -57,13 +57,13 @@ Deletion
 To delete the training portal deployment, run:
 
 ```
-kubectl delete -f https://raw.githubusercontent.com/eduk8s/lab-workshop-deployment/master/resources/training-portal.yaml
+kubectl delete -f https://raw.githubusercontent.com/eduk8s/eduk8s-tutorials/master/resources/training-portal.yaml
 ```
 
 When you are finished with the workshop definition, you can delete it by running:
 
 ```
-kubectl delete -f https://raw.githubusercontent.com/eduk8s/lab-workshop-deployment/master/resources/workshop.yaml
+kubectl delete -f https://raw.githubusercontent.com/eduk8s/eduk8s-tutorials/master/resources/lab-workshop-deployment.yaml
 ```
 
 If you deployed any workshops from the workshop environment, and did not
