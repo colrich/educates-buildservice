@@ -9,12 +9,12 @@ kubectl get workshopenvironments -o name
 This should yield:
 
 ```
-workshopenvironment.training.eduk8s.io/lab-workshop-builder-w01
+workshopenvironment.training.eduk8s.io/lab-workshop-deployment-w01
 workshopenvironment.training.eduk8s.io/sample-workshops-w01
 workshopenvironment.training.eduk8s.io/sample-workshops-w02
 ```
 
-The `lab-workshop-builder-w01` is for this workshop you are working through. The others are for the sample workshops you just deployed.
+The `lab-workshop-deployment-w01` is for this workshop you are working through. The others are for the sample workshops you just deployed.
 
 With the workshop environments for each workshop created, the next pair of namespaces that will show up via the watch are:
 

@@ -15,7 +15,7 @@ kubectl get workshopsessions -o name
 This should yield:
 
 ```
-workshopsession.training.eduk8s.io/lab-workshop-builder-w01-s001
+workshopsession.training.eduk8s.io/lab-workshop-deployment-w01-s001
 workshopsession.training.eduk8s.io/sample-workshops-w01-s001
 workshopsession.training.eduk8s.io/sample-workshops-w02-s001
 ```
