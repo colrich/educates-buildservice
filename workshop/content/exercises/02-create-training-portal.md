@@ -31,7 +31,7 @@ The `spec.portal` section is used to define properties which apply to the traini
 
 The `spec.workshops` section is a list of the workshops to be made available. The names of the workshops must match the names of the `Workshop` custom resource definitions you loaded previously.
 
-Against each workshop you can set properties which apply only to that workshop. This can include a lessor capacity for the workshop, a specific number of reserved workshop sessions that should be pre-created in readiness, and time limits.
+Against each workshop you can set properties which apply only to that workshop. This can include a specific capacity for the workshop, a specific number of reserved workshop sessions that should be pre-created in readiness, and time limits.
 
 In this workshop we will dive further into a few of the different things you can define in `TrainingPortal`. For a more thorough description consult the documentation.
 

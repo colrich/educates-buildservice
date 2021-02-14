@@ -4,7 +4,7 @@ By default a training portal instance will attempt to create one workshop sessio
 
 The maximum number of workshop sessions (inclusive of any workshops sessions being kept in reserve), that can be created can be set for the whole training portal or on a per workshop basis.
 
-With the training portal configuration we used, as it wasn't overridden, one reserve workshop session was created by the training portal for each of the workshop environments. This was done by the training portal creating instances of the `WorkshopSession` custom resource. As with `WorkshopEnvironment`, although you can see that exists, you don't need to directly deal with instances of the `WorkshopSession` resource.
+With the training portal configuration we used, as it wasn't overridden, one reserve workshop session was created by the training portal for each of the workshop environments. This was done by the training portal creating instances of the `WorkshopSession` custom resource. As with `WorkshopEnvironment`, although you can see they exist, you don't need to directly deal with instances of the `WorkshopSession` resource.
 
 If you did want to see what workshop sessions exist, independent of what training portal or workshop environment they were created from, run:
 
@@ -20,7 +20,9 @@ workshopsession.training.eduk8s.io/sample-workshops-w01-s001
 workshopsession.training.eduk8s.io/sample-workshops-w02-s001
 ```
 
-Similar to before, you will see that there is one workshop session for the current workshop session you are working through. The others being for the sample workshops you just deployed. Right now neither of those has been allocated to a user and are sitting there in reserve waiting.
+Similar to before, you will see that there is one workshop session for the current workshop session you are working through. This is the session named ``{{session_name}}``.
+
+The other sessions are for the sample workshops you just deployed. Right now neither of those has been allocated to a user and are sitting there in reserve waiting.
 
 Since the intent of deploying workshops to Kubernetes is often to be able to teach something about Kubernetes, each workshop session is given a namespace in the cluster to use. This is called the session namespace and would be where a user working through a workshop could deploy applications.
 

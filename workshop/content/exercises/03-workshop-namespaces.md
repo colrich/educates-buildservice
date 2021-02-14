@@ -1,4 +1,4 @@
-Once the deployment of the training portal has completed and it is starting up, it will consult the list of workshops defined in the custom resource for that training portal. The training portal will then trigger the creation of a workshop environment for each workshop. Under the covers this is initiated by it creating instances of the `WorkshopEnvironment` custom resource, but you usually don't need to worry about those.
+Once the deployment of the training portal has completed and it is starting up, it will consult the list of workshops defined in the custom resource for that training portal. The training portal will then trigger the creation of a workshop environment for each workshop. Under the covers this is initiated by the training portal creating instances of the `WorkshopEnvironment` custom resource, but you usually don't need to worry about those.
 
 If you did want to see what workshop environments exist, independent of what training portal they were created from, run:
 
