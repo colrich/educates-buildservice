@@ -1,8 +1,12 @@
-name: Markdown Sample
+name: Educates Tutorials
 
 modules:
     activate:
     - workshop-overview
-    - setup-environment
-    - exercises/01-sample-content
+    - exercises/01-loading-the-workshops
+    - exercises/02-create-training-portal
+    - exercises/03-workshop-namespaces
+    - exercises/04-session-namespaces
+    - exercises/05-accessing-workshops
     - workshop-summary
+

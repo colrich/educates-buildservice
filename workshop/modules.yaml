@@ -1,12 +1,17 @@
 modules:
     workshop-overview:
         name: Workshop Overview
-        exit_sign: Setup Environment
-    setup-environment:
-        name: Setup Environment
         exit_sign: Start Workshop
-    exercises/01-sample-content:
-        name: Sample Content
+    exercises/01-loading-the-workshops:
+        name: Loading the Workshops
+    exercises/02-create-training-portal:
+        name: Create Training Portal
+    exercises/03-workshop-namespaces:
+        name: Workshop Namespaces
+    exercises/04-session-namespaces:
+        name: Session Namespaces
+    exercises/05-accessing-workshops:
+        name: Accessing Workshops
     workshop-summary:
         name: Workshop Summary
         exit_sign: Finish Workshop

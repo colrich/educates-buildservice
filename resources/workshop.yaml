@@ -1,20 +1,19 @@
 apiVersion: training.eduk8s.io/v1alpha2
 kind: Workshop
 metadata:
-  name: lab-markdown-sample
+  name: lab-workshop-deployment
 spec:
-  title: Markdown Sample
-  description: A sample workshop using Markdown
   vendor: eduk8s.io
-  difficulty: beginner
-  duration: 15m
-  url: https://github.com/eduk8s/lab-markdown-sample
+  title: Workshop Deployment
+  description: Workshop on how to deploy/manage Educates workshops
+  url: https://github.com/eduk8s/eduk8s-tutorials
   content:
-    #image: quay.io/eduk8s/lab-markdown-sample:master
-    files: github.com/eduk8s/lab-markdown-sample
+    files: github.com/eduk8s/educates-tutorials
   session:
     namespaces:
-      budget: small
+      budget: medium
+    resources:
+      storage: 5Gi
     applications:
       terminal:
         enabled: true
@@ -23,3 +22,65 @@ spec:
         enabled: true
       editor:
         enabled: true
+      webdav:
+        enabled: true
+    dashboards:
+      - name: Documentation
+        url: https://docs.edukates.io/en/latest/
+    objects:
+    - apiVersion: v1
+      kind: Service
+      metadata:
+        name: $(session_namespace)-packager
+        namespace: $(workshop_namespace)
+      spec:
+        type: ClusterIP
+        ports:
+        - name: 11111-tcp
+          port: 11111
+          targetPort: 11111
+          protocol: TCP
+        selector:
+          deployment: $(session_namespace)
+    - apiVersion: rbac.authorization.k8s.io/v1
+      kind: ClusterRoleBinding
+      metadata:
+        name: $(session_namespace)-crds
+      roleRef:
+        apiGroup: rbac.authorization.k8s.io
+        kind: ClusterRole
+        name: $(workshop_namespace)-crds
+      subjects:
+      - kind: ServiceAccount
+        namespace: $(workshop_namespace)
+        name: $(service_account)
+  environment:
+    objects:
+    - apiVersion: rbac.authorization.k8s.io/v1
+      kind: ClusterRole
+      metadata:
+        name: $(workshop_namespace)-crds
+      rules:
+      - apiGroups:
+        - training.eduk8s.io
+        resources:
+        - workshops
+        - trainingportals
+        verbs:
+        - create
+        - patch
+        - delete
+        - get
+        - list
+        - watch
+      - apiGroups:
+        - training.eduk8s.io
+        resources:
+        - systemprofiles
+        - workshopenvironments
+        - workshoprequests
+        - workshopsessions
+        verbs:
+        - get
+        - list
+        - watch
