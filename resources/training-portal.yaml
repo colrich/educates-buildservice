@@ -9,5 +9,5 @@ spec:
     capacity: 1
   workshops:
   - name: lab-workshop-deployment
-    expires: 24h
+    expires: 3h
     orphaned: 5m
