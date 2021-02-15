@@ -18,10 +18,10 @@ value:
         type: anonymous
     workshops:
     - name: lab-asciidoc-sample
-      expires: 10m
+      expires: 15m
       orphaned: 5m
     - name: lab-markdown-sample
-      expires: 10m
+      expires: 15m
       orphaned: 5m
 ```
 
