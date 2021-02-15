@@ -42,4 +42,4 @@ name: Documentation
 url: https://docs.edukates.io/en/develop/runtime-environment/training-portal.html#specifying-an-event-access-code
 ```
 
-This is useful where you are running a workshop at a conference and want to allow anonymous access, but only want people who are present in the room who are given code to access it.
+This is useful where you are running a workshop at a conference and want to allow anonymous access, but only want people who are present in the room and who are given the code, to access it.
