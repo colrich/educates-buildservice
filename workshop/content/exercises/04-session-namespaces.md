@@ -2,7 +2,7 @@ Before a user can do a workshop they need to be allocated a workshop session. Th
 
 By default a training portal instance will attempt to create one workshop session in reserve for each workshop. The number of workshop sessions to create in reserve can be overridden on a per workshop basis. When one of the workshop sessions kept in reserve is allocated to a user, a new workshop session will be created as a reserve to replace it.
 
-The maximum number of workshop sessions (inclusive of any workshops sessions being kept in reserve), that can be created can be set for the whole training portal or on a per workshop basis.
+The maximum number of workshop sessions (inclusive of any workshop sessions being kept in reserve), that can be created can be set for the whole training portal or on a per workshop basis.
 
 With the training portal configuration we used, as it wasn't overridden, one reserve workshop session was created by the training portal for each of the workshop environments. This was done by the training portal creating instances of the `WorkshopSession` custom resource. As with `WorkshopEnvironment`, although you can see they exist, you don't need to directly deal with instances of the `WorkshopSession` resource.
 

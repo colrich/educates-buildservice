@@ -40,7 +40,7 @@ The action of loading the workshop definitions does nothing besides creating the
 
 The loading of the workshop definitions as a separate step before actually creating any deployments for the workshops is to ensure there is an opportunity for any cluster admin to audit the workshop definitions and decide first that they want to allow them to be run in the cluster. It is only after the workshop definitions have been loaded that they will be able to be associated with a training portal instance. It is not possible to refer directly to a remote hosted resource definition in the configuration for the training portal.
 
-We will cover what is in a workshop definition later, but if you want to have a quick look at what one looks like run:
+A more detailed look into the workshop definition is covered in a separate workshop on creating workshops, but if you want to have a quick look at what one looks like run:
 
 ```execute
 kubectl get workshop/lab-markdown-sample -o yaml
