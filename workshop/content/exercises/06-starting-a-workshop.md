@@ -12,7 +12,7 @@ name: Terminal
 
 You should see that a new namespace has now been created with name `sample-workshops-w01-s002`. This is the namespace for a new workshop session created in reserve to replace the one which was justed allocated to the workshop session you requested.
 
-You can also verify what sessions exist by running:
+You can also verify this by again listing the workshop sessions, this time qualifying the query by the name of the training portal.
 
 ```execute
 kubectl get workshopsessions -o name -l training.eduk8s.io/portal.name=sample-workshops
