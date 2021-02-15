@@ -13,7 +13,7 @@ NAME               URL                                          ADMINUSERNAME   
 sample-workshops   https://sample-workshops-ui.{{ingress_domain}}   eduk8s          mGI2C1TkHEBoFgKiZetxMnwAldRU80aN
 ```
 
-At this point we are only interested in the URL, ignore the admin user name and password.
+At this point we are only interested in the URL, ignore the admin user name and password which are displayed.
 
 Click on the URL link in the terminal window to open a new browser window against the training portal. You should see:
 
@@ -24,7 +24,7 @@ Where as with the workshop you are currently working your way through, it was no
 ```editor:select-matching-text
 file: ~/exercises/sample-workshops.yaml
 text: registration
-before: 1
+before: 0
 after: 1
 ```
 
@@ -35,9 +35,11 @@ name: Documentation
 url: https://docs.edukates.io/en/latest/runtime-environment/training-portal.html#controlling-registration-type
 ```
 
-In the case of anonymous access, it is also possible to still provide a password. This would be a common password that everyone would use to access the training portal.
+In the case of anonymous access, it is also possible to still require an access code. This would be a single value that everyone would use to access the training portal.
 
 ```dashboard:reload-dashboard
 name: Documentation
 url: https://docs.edukates.io/en/develop/runtime-environment/training-portal.html#specifying-an-event-access-code
 ```
+
+This is useful where you are running a workshop at a conference and want to allow anonymous access, but only want people who are present in the room who are given code to access it.
