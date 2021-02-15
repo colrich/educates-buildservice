@@ -26,4 +26,4 @@ workshopsession.training.eduk8s.io/sample-workshops-w02-s002
 workshopsession.training.eduk8s.io/sample-workshops-w01-s002
 ```
 
-Note that there isn't any way from looking at the resources for the workshop sessions to determine whether they are in use. As we will explore later, the state of workshop sessions can however be determined by using the admin web interface of the training portal.
+Note that there isn't a way from looking at the resources for the workshop sessions to determine whether they have been allocated and are in use. This is because the state of whether a session is in reserve or allocated is something maintained by the training portal. As we will explore later, the state of workshop sessions can however be determined by using the admin web interface of the training portal.
