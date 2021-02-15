@@ -7,7 +7,7 @@ Once the workshop dashboard for the sample workshop is displayed, take note of t
 Check again the state of the watch on namespaces in the terminal.
 
 ```dashboard:open-dashboard
-name: Terminals
+name: Terminal
 ```
 
 You should see that a new namespace has now been created with name `sample-workshops-w01-s002`. This is the namespace for a new workshop session created in reserve to replace the one which was justed allocated to the workshop session you requested.
