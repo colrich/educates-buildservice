@@ -3,7 +3,7 @@ name: Educates Tutorials
 modules:
     activate:
     - workshop-overview
-    - exercises/01-loading-the-workshops
+    - exercises/01-loading-workshops
     - exercises/02-create-training-portal
     - exercises/03-workshop-namespaces
     - exercises/04-session-namespaces
