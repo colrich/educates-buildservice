@@ -1,4 +1,4 @@
-This workshop guides you through how to deploy workshops with Educates on Kubernetes, what occurs when workshops are deployed, as well as how to create your own custom workshops. The workshop is written to complement the documentation for Educates, acting as a live hands on tutorial which you can use to learn about Educates.
+This workshop guides you through how to deploy workshops with Educates on Kubernetes and what occurs under the covers when workshops are deployed. The workshop is written to complement the documentation for Educates, acting as a live hands on tutorial which you can use to learn about Educates.
 
 Note that although the workshop environment user does not have any elevated privileges in the Kubernetes cluster, the user can indirectly deploy Educates workshops to the cluster that may grant elevated privileges. Do not therefore run this workshop on a production cluster. If the Kubernetes cluster is not private and local to you own machine, it is recommended that you delete the cluster when you are done with the workshop.
 
