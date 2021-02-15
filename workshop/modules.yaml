@@ -12,6 +12,8 @@ modules:
         name: Session Namespaces
     exercises/05-accessing-workshops:
         name: Accessing Workshops
+    exercises/06-starting-a-workshop:
+        name: Starting a Workshop
     workshop-summary:
         name: Workshop Summary
         exit_sign: Finish Workshop

@@ -8,5 +8,6 @@ modules:
     - exercises/03-workshop-namespaces
     - exercises/04-session-namespaces
     - exercises/05-accessing-workshops
+    - exercises/06-starting-a-workshop
     - workshop-summary
 
