@@ -23,9 +23,9 @@ Where as with the workshop you are currently working your way through, it was no
 
 ```editor:select-matching-text
 file: ~/exercises/sample-workshops.yaml
-text: registration
-before: 0
-after: 1
+text: "type: anonymous"
+before: 1
+after: 0
 ```
 
 The training portal can be configured for anonymous access or user self registration. Any form of user registration can also be disabled, meaning that only a user with the admin credentials for the training portal can access it. The latter is how you would have accessed this workshop you are doing now. Details of configuration and user access can be found in the documentation.
