@@ -10,12 +10,18 @@ This should display output similar to:
 
 ```
 NAME               URL                                          ADMINUSERNAME   ADMINPASSWORD
-sample-workshops   https://sample-workshops-ui.{{ingress_domain}}   eduk8s          mGI2C1TkHEBoFgKiZetxMnwAldRU80aN
+sample-workshops   {{ingress_protocol}}://sample-workshops-ui.{{ingress_domain}}   eduk8s          mGI2C1TkHEBoFgKiZetxMnwAldRU80aN
 ```
 
 At this point we are only interested in the URL, ignore the admin user name and password which are displayed.
 
-Click on the URL link in the terminal window to open a new browser window against the training portal. You should see:
+Visit the URL which is listed.
+
+```dashboard:open-url
+url: {{ingress_protocol}}://sample-workshops-ui.{{ingress_domain}}
+```
+
+You should see:
 
 ![](training-portal-catalog.png)
 
