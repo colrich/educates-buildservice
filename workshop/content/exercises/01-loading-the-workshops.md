@@ -31,10 +31,10 @@ The result should include the workshop resources:
 ```
 workshop.training.eduk8s.io/lab-asciidoc-sample
 workshop.training.eduk8s.io/lab-markdown-sample
-workshop.training.eduk8s.io/lab-workshop-deployment
+workshop.training.eduk8s.io/{{workshop_name}}
 ```
 
-That for `lab-workshop-deployment` is the definition for this workshop, and the others are for those you just loaded. You may see other workshops listed if someone is already using Educates to run workshops within the same Kubernetes cluster as the workshop definitions are cluster scoped and not namespace scoped.
+That for `{{workshop_name}}` is the definition for this workshop, and the others are for those you just loaded. You may see other workshops listed if someone is already using Educates to run workshops within the same Kubernetes cluster as the workshop definitions are cluster scoped and not namespace scoped.
 
 The action of loading the workshop definitions does nothing besides creating the custom resources within the Kubernetes cluster. No actual workshop environment or sessions will be created.
 

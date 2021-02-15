@@ -15,12 +15,12 @@ kubectl get workshopsessions -o name
 This should yield:
 
 ```
-workshopsession.training.eduk8s.io/lab-workshop-deployment-w01-s001
+workshopsession.training.eduk8s.io/{{session_namespace}}
 workshopsession.training.eduk8s.io/sample-workshops-w01-s001
 workshopsession.training.eduk8s.io/sample-workshops-w02-s001
 ```
 
-Similar to before, you will see that there is one workshop session for the current workshop session you are working through. This is the session named ``{{session_name}}``.
+Similar to before, you will see that there is one workshop session for the current workshop session you are working through. This is the session named `{{session_namespace}}`.
 
 The other sessions are for the sample workshops you just deployed. Right now neither of those has been allocated to a user and are sitting there in reserve waiting.
 
