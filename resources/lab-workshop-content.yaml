@@ -43,7 +43,7 @@ spec:
         title: Sample Workshop
         description: My custom workshop
         content:
-          files: http://$(session_namespace)-packager.$(workshop_namespace).svc.cluster.local/
+          files: http://$(session_namespace)-packager.$(workshop_namespace).svc.cluster.local:11111/
         session:
           namespaces:
             budget: small
