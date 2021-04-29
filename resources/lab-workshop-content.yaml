@@ -58,18 +58,18 @@ spec:
               enabled: true
             examiner:
               enabled: true
-      - apiVersion: training.eduk8s.io/v1alpha1
-        kind: TrainingPortal
-        metadata:
-          name: $(session_namespace)-portal
-        spec:
-          portal:
-            registration:
-              type:anonymous
-            sessions:
-              maximum: 1
-          workshops:
-          - name: $(session_namespace)-workshop
-            reserved: 0
-            expires: 1h
-            orphaned: 5m
+    - apiVersion: training.eduk8s.io/v1alpha1
+      kind: TrainingPortal
+      metadata:
+        name: $(session_namespace)-portal
+      spec:
+        portal:
+          registration:
+            type:anonymous
+          sessions:
+            maximum: 1
+        workshops:
+        - name: $(session_namespace)-workshop
+          reserved: 0
+          expires: 1h
+          orphaned: 5m
