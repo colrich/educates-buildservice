@@ -38,7 +38,7 @@ spec:
     - apiVersion: training.eduk8s.io/v1alpha2
       kind: Workshop
       metadata:
-        name: $(session_namespace)-workshop
+        name: $(session_namespace)-lab
       spec:
         title: Sample Workshop
         description: My custom workshop
@@ -61,15 +61,16 @@ spec:
     - apiVersion: training.eduk8s.io/v1alpha1
       kind: TrainingPortal
       metadata:
-        name: $(session_namespace)-portal
+        name: $(session_namespace)-lab
       spec:
         portal:
+          name: $(session_namespace)-lab
           registration:
             type: anonymous
           sessions:
             maximum: 1
         workshops:
-        - name: $(session_namespace)-workshop
+        - name: $(session_namespace)-lab
           reserved: 0
           expires: 1h
           orphaned: 5m
