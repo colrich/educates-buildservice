@@ -65,7 +65,7 @@ spec:
       spec:
         portal:
           registration:
-            type:anonymous
+            type: anonymous
           sessions:
             maximum: 1
         workshops:
