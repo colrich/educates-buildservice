@@ -8,7 +8,12 @@ spec:
       enabled: false
     sessions:
       maximum: 1
+    updates:
+      workshop: true
   workshops:
+  - name: lab-workshop-content
+    expires: 3h
+    orphaned: 15m
   - name: lab-workshop-deployment
     expires: 3h
-    orphaned: 5m
+    orphaned: 15m

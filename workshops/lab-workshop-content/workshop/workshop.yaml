@@ -1,0 +1,6 @@
+name: Workshop Content
+
+modules:
+    activate:
+    - workshop-overview
+    - workshop-summary
