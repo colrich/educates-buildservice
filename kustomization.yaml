@@ -2,5 +2,6 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 
 resources:
+- resources/lab-workshop-content.yaml
 - resources/lab-workshop-deployment.yaml
 - resources/training-portal.yaml
