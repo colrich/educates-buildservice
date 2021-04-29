@@ -8,7 +8,7 @@ spec:
   description: Workshop on how to deploy/manage Educates workshops
   url: https://github.com/eduk8s/eduk8s-tutorials
   content:
-    files: github.com/eduk8s/eduk8s-tutorials
+    files: github.com/eduk8s/eduk8s-tutorials/workshops/lab-workshop-deployment
   session:
     namespaces:
       budget: medium
