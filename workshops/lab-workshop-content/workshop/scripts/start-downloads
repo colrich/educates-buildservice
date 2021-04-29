@@ -1,6 +1,6 @@
 #!/bin/bash
 
-source /opt/webdav/bin/activate
+source /opt/httpd/bin/activate
 
 mkdir -p /tmp/downloads
 
