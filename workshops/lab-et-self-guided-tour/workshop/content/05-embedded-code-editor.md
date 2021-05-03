@@ -6,7 +6,7 @@ The embedded IDE which can be enabled for the workshop environments is VS Code. 
 name: Editor
 ```
 
-To avoid having to provide explicit instructions to a workshop user for how to view, create or edit files, with users cut and pasting content from instructions, a range of clickable actions are provided which can act directly on the VS Code editor.
+In order to help guide users when viewing, creating or editing files, a range of clickable actions are provided which can act directly on the VS Code editor.
 
 Actions include being able to open a file:
 
@@ -14,19 +14,31 @@ Actions include being able to open a file:
 file: ~/exercises/nginx-sample/deployment.yaml
 ```
 
-Highlighting specific sections of a file when explaining contents or how to make modifications:
+Highlighting specific sections of a file when explaining contents or where a user needs to make modifications:
 
 ```editor:select-matching-text
 file: ~/exercises/nginx-sample/deployment.yaml
-text: "image: nginx:1.20.0"
+text: "image: nginx:1.20.0-alpine"
 ```
 
-For YAML files, it is even possible to effect updates to the file:
+Or creating a new file:
 
-```editor:insert-value-into-yaml
-file: ~/exercises/nginx-sample/deployment.yaml
-path: spec.template.spec.containers
-value:
-- name: nginx
-    image: nginx:1.20.0-alpine
+```editor:append-lines-to-file
+file: ~/exercises/nginx-sample/ingress.yaml
+text: |
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: nginx
+  labels:
+    app: nginx
+spec:
+  rules:
+  - host: {{session_namespace}}-nginx.{{ingress_domain}}
+    http:
+      paths:
+      - path: "/"
+        backend:
+          serviceName: nginx
+          servicePort: 80
 ```

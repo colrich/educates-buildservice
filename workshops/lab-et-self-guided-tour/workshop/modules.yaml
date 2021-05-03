@@ -8,8 +8,8 @@ modules:
         name: Containers vs VMs
     04-workshop-instructions:
         name: Workshop Instructions
-    05-embedded-vscode-editor:
-        name: Embedded VS Code Editor
+    05-embedded-code-editor:
+        name: Embedded Code Editor
     99-further-information:
         name: Further Information
         exit_sign: Finish Tour
