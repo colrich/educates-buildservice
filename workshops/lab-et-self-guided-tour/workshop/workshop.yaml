@@ -4,4 +4,5 @@ modules:
     activate:
     - 01-guided-tour-overview
     - 02-workshop-environment
+    - 03-containers-vs-vms
     - 99-further-information
