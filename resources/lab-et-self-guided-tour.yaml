@@ -10,7 +10,7 @@ spec:
   content:
     files: github.com/eduk8s/eduk8s-tutorials/workshops/lab-et-self-guided-tour
   session:
-    namespaces:
+    applications:
       terminal:
         enabled: true
         layout: split
