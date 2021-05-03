@@ -18,7 +18,7 @@ In this case the command is listing the labels applied to the Kubernetes namespa
 
 In addition to a clickable action for executing a command, for use with the terminals there are also actions for copying text, interrupting a running command, or clearing the terminal.
 
-```terminal:clear-all-terminals
+```terminal:clear-all
 ```
 
 Whenever clicking on these actions, if the target of the action is not visible that dashboard tab will be automatically exposed so you can see the result. This way instructions can easily be scripted as a set of steps that the user only need click on. A user would only need to manually enter things where you wanted them to, or interaction with an application couldn't be automated.
