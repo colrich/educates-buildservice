@@ -6,4 +6,5 @@ modules:
     - 02-workshop-environment
     - 03-containers-vs-vms
     - 04-workshop-instructions
+    - 05-embedded-vscode-editor
     - 99-further-information
