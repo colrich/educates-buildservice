@@ -3,4 +3,4 @@ name: Guided Tour of Educates
 modules:
     activate:
     - 01-guided-tour-overview
-    - 99-more-information
+    - 99-further-information

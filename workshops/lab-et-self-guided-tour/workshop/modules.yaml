@@ -2,6 +2,6 @@ modules:
     01-guided-tour-overview:
         name: Guided Tour Overview
         exit_sign: Start Tour
-    99-more-information:
-        name: More Information
+    99-further-information:
+        name: Further Information
         exit_sign: Finish Tour
