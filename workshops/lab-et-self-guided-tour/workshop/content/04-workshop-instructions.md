@@ -17,3 +17,8 @@ If you haven't done so already, click anywhere on the outlined block and the com
 In this case the command is listing the labels applied to the Kubernetes namespace resource for this workshop session. The correct namespace for this workshop session was queried because the workshop instructions can be filled out with details specific to the users session. This can be done within clickable actions or general text.
 
 In addition to a clickable action for executing a command, for use with the terminals there are also actions for copying text, interrupting a running command, or clearing the terminal.
+
+```terminal:clear-all-terminals
+```
+
+Whenever clicking on these actions, if the target of the action is not visible that dashboard tab will be automatically exposed so you can see the result. This way instructions can easily be scripted as a set of steps that the user only need click on. A user would only need to manually enter things where you wanted them to, or interaction with an application couldn't be automated.
