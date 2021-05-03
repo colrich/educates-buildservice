@@ -5,4 +5,5 @@ modules:
     - 01-guided-tour-overview
     - 02-workshop-environment
     - 03-containers-vs-vms
+    - 04-workshop-instructions
     - 99-further-information
