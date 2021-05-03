@@ -1,7 +1,7 @@
 modules:
-    workshop-overview:
-        name: Workshop Overview
-        exit_sign: Start Workshop
-    workshop-summary:
-        name: Workshop Summary
-        exit_sign: Finish Workshop
+    01-guided-tour-overview:
+        name: Guided Tour Overview
+        exit_sign: Start Tour
+    99-more-information:
+        name: More Information
+        exit_sign: Finish Tour

@@ -2,5 +2,5 @@ name: Guided Tour of Educates
 
 modules:
     activate:
-    - workshop-overview
-    - workshop-summary
+    - 01-guided-tour-overview
+    - 99-more-information

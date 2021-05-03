@@ -1,8 +1,0 @@
-#!/bin/bash
-
-source /opt/httpd/bin/activate
-
-mkdir -p /tmp/downloads
-
-exec mod_wsgi-express start-server --log-to-terminal --port 11111 \
-  --document-root /tmp/downloads /opt/workshop/scripts/downloads.py
