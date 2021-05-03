@@ -5,7 +5,7 @@ modules:
     02-workshop-environment:
         name: Workshop Environment
     03-containers-vs-vms:
-        name: Containers VS VMs
+        name: Containers vs VMs
     99-further-information:
         name: Further Information
         exit_sign: Finish Tour
