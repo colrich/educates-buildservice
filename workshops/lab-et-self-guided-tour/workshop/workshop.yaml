@@ -1,0 +1,6 @@
+name: Guided Tour of Educates
+
+modules:
+    activate:
+    - workshop-overview
+    - workshop-summary

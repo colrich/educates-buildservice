@@ -1,0 +1,22 @@
+apiVersion: training.eduk8s.io/v1alpha2
+kind: Workshop
+metadata:
+  name: lab-et-self-guided-tour
+spec:
+  vendor: eduk8s.io
+  title: Guided Tour of Educates
+  description: A guided tour of Educates features and how it can be used
+  url: https://github.com/eduk8s/eduk8s-tutorials
+  content:
+    files: github.com/eduk8s/eduk8s-tutorials/workshops/lab-et-self-guided-tour
+  session:
+    namespaces:
+      terminal:
+        enabled: true
+        layout: split
+      console:
+        enabled: true
+      editor:
+        enabled: true
+      slides:
+        enabled: true

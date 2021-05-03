@@ -11,6 +11,9 @@ spec:
     updates:
       workshop: true
   workshops:
+  - name: lab-et-self-guided-tour
+    expires: 30m
+    orphaned: 5m
   - name: lab-workshop-content
     expires: 3h
     orphaned: 15m
