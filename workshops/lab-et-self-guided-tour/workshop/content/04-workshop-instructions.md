@@ -1,8 +1,8 @@
 The workshop instructions provided with a workshop can be written using either Markdown or AsciiDoc formatting. Markdown works great for most workshops, but if you need a richer set of features for page formatting, AsciiDoc is the way to go.
 
-Which ever document format you use, both support the ability to drop in custom HTML, including Javascript and stylesheets, for that extra bit of flexibility.
+Whichever document format you use, both support the ability to drop in custom HTML, including Javascript and stylesheets, for that extra bit of flexibility.
 
-Although you can resort to custom HTML and Javascript, Educates also provides some of its own magic to help improve the experience for a user when working through workshop instructions. These are what are called clickable action blocks, with the most common a workshop is likely to use being one to indicate that a command should be executed by the workshop user in the terminal.
+Although you can resort to custom HTML and Javascript, Educates does provide some of its own magic to help improve the experience for a user when working through workshop instructions. These are what are called clickable action blocks, with the most common a workshop is likely to use being one to indicate that a command should be executed by the workshop user in the terminal.
 
 ```terminal:execute
 command: kubectl label namespace/{{session_namespace}} --list
