@@ -26,19 +26,19 @@ Or creating a new file:
 ```editor:append-lines-to-file
 file: ~/exercises/nginx-sample/ingress.yaml
 text: |
-apiVersion: extensions/v1beta1
-kind: Ingress
-metadata:
-  name: nginx
-  labels:
-    app: nginx
-spec:
-  rules:
-  - host: {{session_namespace}}-nginx.{{ingress_domain}}
-    http:
-      paths:
-      - path: "/"
-        backend:
-          serviceName: nginx
-          servicePort: 80
+    apiVersion: extensions/v1beta1
+    kind: Ingress
+    metadata:
+    name: nginx
+    labels:
+        app: nginx
+    spec:
+    rules:
+    - host: {{session_namespace}}-nginx.{{ingress_domain}}
+        http:
+        paths:
+        - path: "/"
+            backend:
+            serviceName: nginx
+            servicePort: 80
 ```
