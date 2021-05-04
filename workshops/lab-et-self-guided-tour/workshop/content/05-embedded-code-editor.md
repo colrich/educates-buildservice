@@ -30,7 +30,7 @@ file: ~/exercises/nginx-sample/deployment.yaml
 text: 1.20.0-alpine
 ```
 
-Or creating a new file:
+Or creating a new file with contents from the workshop instructions:
 
 ```editor:append-lines-to-file
 file: ~/exercises/nginx-sample/ingress.yaml
