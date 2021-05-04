@@ -14,11 +14,20 @@ Actions include being able to open a file:
 file: ~/exercises/nginx-sample/deployment.yaml
 ```
 
-Highlighting specific sections of a file when explaining contents or where a user needs to make modifications:
+Selecting a specific section of a file when explaining contents or where a user needs to make modifications:
 
 ```editor:select-matching-text
 file: ~/exercises/nginx-sample/deployment.yaml
-text: "image: nginx:1.20.0-alpine"
+text: "image: nginx:(.*)"
+isRegex: true
+group: 1
+```
+
+Modify the selected region of a file:
+
+```editor:replace-text-selection
+file: ~/exercises/nginx-sample/deployment.yaml
+text: latest
 ```
 
 Or creating a new file:
@@ -26,7 +35,7 @@ Or creating a new file:
 ```editor:append-lines-to-file
 file: ~/exercises/nginx-sample/ingress.yaml
 text: |
-  apiVersion: extensions/v1beta1
+  apiVersion: networking.k8s.io/v1
   kind: Ingress
   metadata:
     name: nginx
