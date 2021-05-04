@@ -12,6 +12,8 @@ modules:
         name: Embedded Code Editor
     06-kubernetes-dashboard:
         name: Kubernetes Dashboard
+    07-custom-dashboard-tabs:
+        name: Custom Dashboard Tabs
     99-further-information:
         name: Further Information
         exit_sign: Finish Tour

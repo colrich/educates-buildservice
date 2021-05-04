@@ -8,4 +8,5 @@ modules:
     - 04-workshop-instructions
     - 05-embedded-code-editor
     - 06-kubernetes-dashboard
+    - 07-custom-dashboard-tabs
     - 99-further-information
