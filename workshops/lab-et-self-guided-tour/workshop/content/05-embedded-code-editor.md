@@ -18,7 +18,7 @@ Selecting a specific section of a file when explaining contents or where a user 
 
 ```editor:select-matching-text
 file: ~/exercises/nginx-sample/deployment.yaml
-text: "image: nginx: (.*)"
+text: "image: nginx:(.*)"
 isRegex: true
 group: 1
 ```
