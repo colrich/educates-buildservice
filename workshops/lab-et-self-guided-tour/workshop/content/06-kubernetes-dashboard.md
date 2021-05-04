@@ -18,6 +18,8 @@ If necessary you can direct users to a specific view within the Kubernetes web c
 
 ```dashboard:reload-dashboard
 name: Console
+prefix: Console
+title: List pods in namespace {{session_namespace}}
 url: {{ingress_protocol}}://{{session_namespace}}-console.{{ingress_domain}}/#/pod?namespace={{session_namespace}}
 ```
 
