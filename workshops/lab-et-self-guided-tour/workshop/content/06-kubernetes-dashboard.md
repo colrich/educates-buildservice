@@ -21,4 +21,4 @@ name: Console
 url: {{ingress_protocol}}://{{session_namespace}}-console.{{ingress_domain}}/#/pod?namespace={{session_namespace}}
 ```
 
-If desired, instead of using the standard Kubernetes dashboard, you can instead enable as part of the workshop configuration the use of the Octant console for Kubernetes.
+If desired, instead of using the standard Kubernetes dashboard you can enable as part of the workshop definition the use of the Octant console for Kubernetes.
