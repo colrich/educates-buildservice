@@ -12,6 +12,8 @@ spec:
   session:
     namespaces:
       budget: small
+      security:
+        policy: anyuid
     applications:
       terminal:
         enabled: true
