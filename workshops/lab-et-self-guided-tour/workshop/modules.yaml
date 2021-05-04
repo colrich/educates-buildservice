@@ -10,6 +10,8 @@ modules:
         name: Workshop Instructions
     05-embedded-code-editor:
         name: Embedded Code Editor
+    06-kubernetes-dashboard:
+        name: Kubernetes Dashboard
     99-further-information:
         name: Further Information
         exit_sign: Finish Tour

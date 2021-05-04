@@ -7,4 +7,5 @@ modules:
     - 03-containers-vs-vms
     - 04-workshop-instructions
     - 05-embedded-code-editor
+    - 06-kubernetes-dashboard
     - 99-further-information
