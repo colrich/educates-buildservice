@@ -47,9 +47,10 @@ text: |
       http:
         paths:
         - path: "/"
+          pathType: Prefix
           backend:
             service:
-                name: nginx
-                port:
-                    number: 80
+              name: nginx
+              port:
+                number: 80
 ```
