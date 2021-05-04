@@ -10,6 +10,7 @@ spec:
       maximum: 1
     updates:
       workshop: true
+    reserved: 0
   workshops:
   - name: lab-et-self-guided-tour
     expires: 30m
