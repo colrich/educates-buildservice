@@ -21,7 +21,7 @@ name: Files
 prefix: Files
 title: Open file browser
 description: ""
-url: /files
+url: /files/
 ```
 
 In addition to access through the web browser, it is also possible to enable WebDav access if you wanted to allow a workshop user to mount the filesystem of the workshop session onto their own local machine, or access it with separate file download tools.
