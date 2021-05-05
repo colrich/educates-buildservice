@@ -38,7 +38,7 @@ prefix: Question
 title: 1
 ```
 
-Is Educates awesome.
+Is Educates awesome?
 
 ```section:begin
 name: question-1
