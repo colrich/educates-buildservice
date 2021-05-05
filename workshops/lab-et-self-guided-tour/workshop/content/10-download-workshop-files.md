@@ -10,15 +10,17 @@ command: tar cvf workshop-files.tar ./nginx-sample
 
 with a clickable action included in the workshop instructions to trigger the download.
 
-```file:download-file
+```files:download-file
 path: workshop-files.tar
 ```
 
-If a browsable view of all files is required, a custom dashboard tab can be created with of view of the exposed part of the filesystem
+If a browsable view of all files is required, a custom dashboard tab can be created with a view of the exposed part of the filesystem
 
 ```dashboard:create-dashboard
-name: Files
-url: {{ingress_protocol}}://{{session_namespace}}-files.{{ingress_domain}}
+prefix: Files
+name: Open file browser
+description: ""
+url: /files
 ```
 
 In addition to access through the web browser, it is also possible to enable WebDav access if you wanted to allow a workshop user to mount the filesystem of the workshop session onto their own local machine, or access it with separate file download tools.
