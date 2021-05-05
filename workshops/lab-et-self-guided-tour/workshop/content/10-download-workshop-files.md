@@ -17,8 +17,9 @@ path: workshop-files.tar
 If a browsable view of all files is required, a custom dashboard tab can be created with a view of the exposed part of the filesystem
 
 ```dashboard:create-dashboard
+name: Files
 prefix: Files
-name: Open file browser
+title: Open file browser
 description: ""
 url: /files
 ```
