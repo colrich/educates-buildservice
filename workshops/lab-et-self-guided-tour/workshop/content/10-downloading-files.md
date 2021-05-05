@@ -6,6 +6,7 @@ This feature would allow you for example to instruct a user to package up sample
 
 ```terminal:execute
 command: tar cvf workshop-files.tar ./nginx-sample
+clear: true
 ```
 
 with a clickable action included in the workshop instructions to trigger the download.

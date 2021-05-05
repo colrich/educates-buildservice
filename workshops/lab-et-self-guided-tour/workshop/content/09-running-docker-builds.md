@@ -4,6 +4,7 @@ Running ``docker`` is the same as if you had it on your local system.
 
 ```terminal:execute
 command: docker build -t my-nginx-server nginx-files
+clear: true
 ```
 
 The deployment of an image registry per session for use by the user can also be configured. The resulting images from the docker build can be tagged and pushed to the image registry.

@@ -12,6 +12,7 @@ Trigger the check above to verify that the deployment of nginx to the Kubernetes
 
 ```terminal:execute
 command: kubectl delete -f nginx-sample
+clear: true
 ```
 
 When the deployment has been deleted, the following test should show as passed. 
