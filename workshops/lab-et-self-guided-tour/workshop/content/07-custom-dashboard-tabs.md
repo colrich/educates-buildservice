@@ -15,7 +15,7 @@ This could be an existing external web site, or an application which you had a u
 
 One requirement when doing this is that the web site doesn't enforce restrictions which would prevent it from being embedded in a browser iframe.
 
-Further, the web site will not be able to be embedded if accessed using an insecure HTTP URL, and the Educates workshop is deployed using a secure HTTPS URL. In these cases you will need to open up a separate browser window/tab.
+Further, the web site will not be able to be embedded if accessed using an insecure HTTP URL, and the Educates workshop is deployed using a secure HTTPS URL. In these cases you can open up a separate browser window/tab instead.
 
 ```dashboard:open-url
 url: http://{{session_namespace}}-nginx.{{ingress_domain}}
