@@ -30,4 +30,4 @@ spec:
     ingresses:
     - name: nginx-via-proxy
       protocol: http
-      host: nginx.{{session_namespace}}.svc.cluster.local
+      host: $(session_namespace)-nginx.$(session_namespace).svc.cluster.local
