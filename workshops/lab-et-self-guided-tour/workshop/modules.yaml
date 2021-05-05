@@ -14,6 +14,8 @@ modules:
         name: Kubernetes Dashboard
     07-custom-dashboard-tabs:
         name: Custom Dashboard Tabs
+    08-user-validation-checks:
+        name: User Validation Checks
     99-further-information:
         name: Further Information
         exit_sign: Finish Tour

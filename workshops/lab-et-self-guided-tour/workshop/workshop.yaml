@@ -9,4 +9,5 @@ modules:
     - 05-embedded-code-editor
     - 06-kubernetes-dashboard
     - 07-custom-dashboard-tabs
+    - 08-user-validation-checks
     - 99-further-information

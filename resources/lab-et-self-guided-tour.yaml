@@ -24,6 +24,8 @@ spec:
         enabled: true
       slides:
         enabled: true
+      examiner:
+        enabled: true
     dashboards:
     - name: Docs
       url: https://docs.edukates.io
