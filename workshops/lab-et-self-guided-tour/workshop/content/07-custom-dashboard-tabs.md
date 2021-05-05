@@ -8,7 +8,7 @@ This was done by configuring the dashboard tab in the workshop definition. It is
 
 ```dashboard:create-dashboard
 name: Nginx
-url: {{session_namespace}}-nginx.{{ingress_domain}}
+url: http://{{session_namespace}}-nginx.{{ingress_domain}}
 ```
 
 This could be an existing external web site, or an application which you had a user deploy as part of the workshop instructions as in this case.
@@ -16,7 +16,7 @@ This could be an existing external web site, or an application which you had a u
 The only requirement is that the web site doesn't enforce restrictions which would prevent it from being embedded in a browser iframe. Many web sites with a requirement for a user to login will implement such a restriction, so in that case you will need to open up a separate browser window/tab.
 
 ```dashboard:open-url
-url: {{session_namespace}}-nginx.{{ingress_domain}}
+url: http://{{session_namespace}}-nginx.{{ingress_domain}}
 ```
 
 For custom dashboards, when you are done with it you can have the user remove it as well.
