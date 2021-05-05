@@ -11,5 +11,5 @@ modules:
     - 07-custom-dashboard-tabs
     - 08-user-validation-checks
     - 09-running-docker-builds
-    - 10-download-workshop-files
+    - 10-downloading-files
     - 99-further-information
