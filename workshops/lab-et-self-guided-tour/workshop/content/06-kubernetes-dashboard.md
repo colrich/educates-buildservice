@@ -21,6 +21,7 @@ name: Console
 prefix: Console
 title: List pods in namespace {{session_namespace}}
 url: {{ingress_protocol}}://{{session_namespace}}-console.{{ingress_domain}}/#/pod?namespace={{session_namespace}}
+description: ""
 ```
 
 If desired, instead of using the standard Kubernetes dashboard you can enable as part of the workshop definition the use of the Octant console for Kubernetes.
