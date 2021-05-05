@@ -31,9 +31,9 @@ url: {{ingress_protocol}}://{{session_namespace}}-nginx-via-proxy.{{ingress_doma
 For custom dashboards, when you are done with them you can have the user remove them as well.
 
 ```dashboard:delete-dashboard
-name: External
+name: Internal
 ```
 
 ```dashboard:delete-dashboard
-name: Internal
+name: External
 ```
