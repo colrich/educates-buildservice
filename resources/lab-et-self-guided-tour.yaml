@@ -30,6 +30,9 @@ spec:
         enabled: true
       registry:
         enabled: true
+      files:
+        enabled: true
+        directory: exercises
     dashboards:
     - name: Docs
       url: https://docs.edukates.io
