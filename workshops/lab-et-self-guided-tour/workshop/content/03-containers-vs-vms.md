@@ -1,8 +1,6 @@
 Other products or services providing hosted workshop environments accessible through a web browser generally rely on creating a virtual machine for each users workshop session. This means that workshop sessions can be slow to start up if being created on demand. They can also be difficult to use due to relying on applications which mirror a traditional desktop environment in the web browser.
 
-In Educates each workshop environment, rather than consuming a complete virtual machine, is a container in a Kubernetes cluster.
-
-Rather than having access to a full operating system running in a virtual machine, you are only able to interact with the container for the workshop session.
+In Educates, rather than consuming a complete virtual machine with a full operating system, each workshop session is a container in a Kubernetes cluster.
 
 This doesn't mean you cannot run additional applications. If required for a workshop, you can start up extra processes local to the container. For more complicated scenarios, you can deploy applications into the Kubernetes cluster. This can be done as part of starting up the workshop session, or it could be done by a workshop user as part of the workshop instructions.
 
