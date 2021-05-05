@@ -25,5 +25,9 @@ spec:
       slides:
         enabled: true
     dashboards:
-      - name: Docs
-        url: https://docs.edukates.io
+    - name: Docs
+      url: https://docs.edukates.io
+    ingresses:
+    - name: nginx-via-proxy
+      protocol: http
+      host: nginx.{{session_namespace}}.svc.cluster.local
