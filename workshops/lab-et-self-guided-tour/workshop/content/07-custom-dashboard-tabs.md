@@ -28,8 +28,12 @@ name: Internal
 url: {{ingress_protocol}}://{{session_namespace}}-nginx-via-proxy.{{ingress_domain}}
 ```
 
-For custom dashboards, when you are done with it you can have the user remove it as well.
+For custom dashboards, when you are done with them you can have the user remove them as well.
 
 ```dashboard:delete-dashboard
 name: External
+```
+
+```dashboard:delete-dashboard
+name: Internal
 ```
