@@ -52,5 +52,5 @@ text: |
             service:
               name: nginx
               port:
-                number: 80
+                number: 8080
 ```
