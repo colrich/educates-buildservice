@@ -30,7 +30,7 @@ file: ~/exercises/nginx-sample/deployment.yaml
 text: {{registry_host}}/my-nginx-server:latest
 ```
 
-Create the deployment and wait for it to complete:
+Then create the deployment and wait for it to complete:
 
 ```terminal:execute
 command: |-
