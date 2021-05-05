@@ -26,6 +26,10 @@ spec:
         enabled: true
       examiner:
         enabled: true
+      docker:
+        enabled: true
+      registry:
+        enabled: true
     dashboards:
     - name: Docs
       url: https://docs.edukates.io
