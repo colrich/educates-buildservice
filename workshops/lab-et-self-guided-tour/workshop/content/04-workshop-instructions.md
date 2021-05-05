@@ -22,3 +22,35 @@ In addition to a clickable action for executing a command, for use with the term
 ```
 
 Whenever clicking on these actions, if the target of the action is not visible that dashboard tab will be automatically exposed so you can see the result. This way instructions can easily be scripted as a set of steps that the user only need click on. A user would only need to manually enter things where you wanted them to, or interaction with an application couldn't be automated.
+
+If you have a very long set of instructions, or parts of the instructions which are optional, you can hide them within a collapsed section. Clicking on the action will reveal the content.
+
+This can be useful where you want to hide a set of questions which test peoples knowledge at the end of a page. It is possible to nest clickable actions or even further collapsed sections within the hidden section.
+
+```section:begin
+title: Questions
+```
+
+To show you understand answer the following questions:
+
+```section:heading
+prefix: Question
+title: 1
+```
+
+Is Educates awesome.
+
+```section:begin
+name: question-1
+prefix: Answer
+title: 1
+```
+
+Yes.
+
+```section:end
+name: question-1
+```
+
+```section:end
+```
