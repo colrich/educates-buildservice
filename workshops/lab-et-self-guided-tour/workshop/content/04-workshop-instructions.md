@@ -31,7 +31,7 @@ This can be useful where you want to hide a set of questions which test peoples 
 title: Questions
 ```
 
-To show you understand answer the following questions:
+To show you understand the content of this workshop, answer the following questions:
 
 ```section:heading
 prefix: Question
