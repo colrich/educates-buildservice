@@ -16,6 +16,8 @@ modules:
         name: Custom Dashboard Tabs
     08-user-validation-checks:
         name: User Validation Checks
+    09-running-docker-builds:
+        name: Running Docker Builds
     99-further-information:
         name: Further Information
         exit_sign: Finish Tour
