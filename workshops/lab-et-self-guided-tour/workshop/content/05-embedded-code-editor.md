@@ -18,7 +18,7 @@ Selecting a specific section of a file when explaining contents or where a user 
 
 ```editor:select-matching-text
 file: ~/exercises/nginx-sample/deployment.yaml
-text: "image: (nginx:.*)"
+text: "image: (bitnami/nginx:.*)"
 isRegex: true
 group: 1
 ```
@@ -27,7 +27,7 @@ Modify the selected region of a file:
 
 ```editor:replace-text-selection
 file: ~/exercises/nginx-sample/deployment.yaml
-text: nginx:1.20.0-alpine
+text: bitnami/nginx:1.19.10
 ```
 
 Or creating a new file with contents from the workshop instructions:

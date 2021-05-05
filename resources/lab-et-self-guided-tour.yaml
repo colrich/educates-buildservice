@@ -38,3 +38,4 @@ spec:
     - name: nginx-via-proxy
       protocol: http
       host: nginx.$(session_namespace).svc.cluster.local
+      port: 8080
