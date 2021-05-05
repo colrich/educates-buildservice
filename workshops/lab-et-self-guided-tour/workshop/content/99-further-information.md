@@ -1,3 +1,5 @@
+That is the end of this quick guided tour of some of the more notable features of Educates.
+
 Full reference documentation for Educates can be found at:
 
 * https://docs.edukates.io/
