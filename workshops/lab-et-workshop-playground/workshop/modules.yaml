@@ -2,6 +2,8 @@ modules:
     01-workshop-playground:
         name: Workshop Playground
         exit_sign: Start Workshop
+    02-using-the-playground:
+        name: Using the Playground
     99-further-information:
         name: Further Information
         exit_sign: Finish Workshop

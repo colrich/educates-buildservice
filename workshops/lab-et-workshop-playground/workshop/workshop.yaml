@@ -3,4 +3,5 @@ name: Workshop Content
 modules:
     activate:
     - 01-workshop-playground
+    - 02-using-the-playground
     - 99-further-information
