@@ -4,20 +4,20 @@ metadata:
   name: eduk8s-tutorials
 spec:
   portal:
+    password: educates
     registration:
-      enabled: false
+      type: anonymous
+    ingress:
+      hostname: eduk8s-tutorials
     sessions:
-      maximum: 1
+      maximum: 5
     updates:
       workshop: true
-    reserved: 0
+    reserved: 1
   workshops:
   - name: lab-et-self-guided-tour
     expires: 30m
     orphaned: 5m
-  - name: lab-workshop-content
-    expires: 3h
-    orphaned: 15m
-  - name: lab-workshop-deployment
-    expires: 3h
-    orphaned: 15m
+  - name: lab-et-workshop-playground
+    expires: 120m
+    orphaned: 30m

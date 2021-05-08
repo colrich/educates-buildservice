@@ -3,6 +3,5 @@ kind: Kustomization
 
 resources:
 - resources/lab-et-self-guided-tour.yaml
-- resources/lab-workshop-content.yaml
-- resources/lab-workshop-deployment.yaml
+- resources/lab-et-workshop-playground.yaml
 - resources/training-portal.yaml

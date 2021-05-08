@@ -1,24 +1,24 @@
 apiVersion: training.eduk8s.io/v1alpha2
 kind: Workshop
 metadata:
-  name: lab-workshop-content
+  name: lab-et-workshop-playground
 spec:
   vendor: eduk8s.io
-  title: Workshop Content
-  description: Workshop on how to create Educates workshop content
+  title: Workshop Playground
+  description: Playground for working on workshop content
   url: https://github.com/eduk8s/eduk8s-tutorials
   content:
-    files: github.com/eduk8s/eduk8s-tutorials/workshops/lab-workshop-content
+    files: github.com/eduk8s/eduk8s-tutorials/workshops/lab-et-workshop-playground
   session:
     namespaces:
       budget: medium
-    resources:
-      storage: 5Gi
     applications:
       terminal:
         enabled: true
         layout: split
       editor:
+        enabled: true
+      registry:
         enabled: true
     objects:
     - apiVersion: v1
@@ -38,12 +38,13 @@ spec:
     - apiVersion: training.eduk8s.io/v1alpha2
       kind: Workshop
       metadata:
-        name: $(session_namespace)-lab
+        name: $(session_namespace)-lab1
       spec:
         title: Sample Workshop
         description: My custom workshop
         content:
-          files: http://$(session_namespace)-packager.$(workshop_namespace).svc.cluster.local:11111/
+          #files: http://$(session_namespace)-packager.$(workshop_namespace).svc.cluster.local:11111/
+          files: imgpkg+$(ingress_protocol)://$(registry_username):$(registry_password)@$(registry_host)/workshop-content:latest
         session:
           namespaces:
             budget: small
@@ -61,7 +62,7 @@ spec:
     - apiVersion: training.eduk8s.io/v1alpha1
       kind: TrainingPortal
       metadata:
-        name: $(session_namespace)-lab
+        name: $(session_namespace)-labs
       spec:
         portal:
           name: $(session_namespace)-lab
@@ -69,8 +70,8 @@ spec:
             type: anonymous
           sessions:
             maximum: 1
-        workshops:
-        - name: $(session_namespace)-lab
           reserved: 0
+        workshops:
+        - name: $(session_namespace)-lab1
           expires: 1h
           orphaned: 5m
