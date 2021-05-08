@@ -133,12 +133,37 @@ spec:
               enabled: true
             examiner:
               enabled: true
+    - apiVersion: training.eduk8s.io/v1alpha2
+      kind: Workshop
+      metadata:
+        name: $(session_namespace)-lab5
+      spec:
+        title: Custom Environment
+        description: Your custom workshop base image.
+        content:
+          image: $(registry_host)/custom-environment:latest
+          files: imgpkg+$(ingress_protocol)://$(registry_username):$(registry_password)@$(registry_host)/workshop-content:latest
+        session:
+          namespaces:
+            budget: small
+          applications:
+            terminal:
+              enabled: true
+              layout: split
+            console:
+              enabled: true
+              vendor: octant
+            editor:
+              enabled: true
+            examiner:
+              enabled: true
     - apiVersion: training.eduk8s.io/v1alpha1
       kind: TrainingPortal
       metadata:
         name: $(session_namespace)-labs
       spec:
         portal:
+          title: Playgrounds
           password: $(registry_password)
           ingress:
             hostname: $(session_namespace)-labs
@@ -158,5 +183,8 @@ spec:
           expires: 1h
           orphaned: 5m
         - name: $(session_namespace)-lab4
+          expires: 1h
+          orphaned: 5m
+        - name: $(session_namespace)-lab5
           expires: 1h
           orphaned: 5m
