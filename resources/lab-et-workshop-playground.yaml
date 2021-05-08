@@ -20,6 +20,9 @@ spec:
         enabled: true
       registry:
         enabled: true
+    dashboards:
+    - name: Docs
+      url: https://docs.edukates.io
     objects:
     - apiVersion: v1
       kind: Service

@@ -58,5 +58,8 @@ Note that using ``update-workshop`` will not always alone be enough, such as if 
 
 For more details on using these and others scripts you can use when working on workshop content in a live workshop session, as well as other tips, see:
 
-* https://docs.edukates.io/en/latest/workshop-content/working-on-content.html
+```dashboard:reload-dashboard
+name: Docs
+url: https://docs.edukates.io/en/latest/workshop-content/working-on-content.html
+```
 
