@@ -51,6 +51,12 @@ The portal for the actual workshop playground can be found at:
 url: {{ingress_protocol}}://{{session_namespace}}-labs.{{ingress_domain}}
 ```
 
+The password for accessing the portal is:
+
+```workshop:copy
+{{registry_password}}
+```
+
 Remember that you need to keep this browser page open and cannot close it otherwise the workshop playground will be removed automatically after a period of time. You will need to extend the session for this workshop environment if time starts to run out. This can be done by clicking on the countdown timer when it turns red.
 
 If none of that made any sense, then continue on to the next page to start the workshop to learn how to use the workshop playground.
