@@ -48,7 +48,9 @@ text: docker push {{registry_host}}/custom-environment:latest
 
 The portal for the actual workshop playground can be found at:
 
-* {{ingress_protocol}}://{{session_namespace}}-labs.{{ingress_domain}}
+```dashboard:open-url
+url: {{ingress_protocol}}://{{session_namespace}}-labs.{{ingress_domain}}
+```
 
 Remember that you need to keep this browser page open and cannot close it otherwise the workshop playground will be removed automatically after a period of time. You will need to extend the session for this workshop environment if time starts to run out. This can be done by clicking on the countdown timer when it turns red.
 
