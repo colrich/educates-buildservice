@@ -5,7 +5,7 @@ metadata:
 spec:
   vendor: eduk8s.io
   title: Workshop Playground
-  description: A playground for working on workshop content
+  description: A playground for working on Educates workshop content.
   url: https://github.com/eduk8s/eduk8s-tutorials
   content:
     files: github.com/eduk8s/eduk8s-tutorials/workshops/lab-et-workshop-playground

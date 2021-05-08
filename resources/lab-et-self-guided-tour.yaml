@@ -5,7 +5,7 @@ metadata:
 spec:
   vendor: eduk8s.io
   title: Guided Tour of Educates
-  description: A guided tour of Educates features and how it can be used
+  description: A guided tour of Educates features and how it can be used.
   url: https://github.com/eduk8s/eduk8s-tutorials
   content:
     files: github.com/eduk8s/eduk8s-tutorials/workshops/lab-et-self-guided-tour
