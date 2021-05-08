@@ -2,5 +2,5 @@ name: Workshop Content
 
 modules:
     activate:
-    - workshop-overview
-    - workshop-summary
+    - 01-workshop-playground
+    - 99-further-information

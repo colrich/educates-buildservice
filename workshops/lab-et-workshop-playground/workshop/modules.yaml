@@ -1,7 +1,7 @@
 modules:
-    workshop-overview:
-        name: Workshop Overview
+    01-workshop-playground:
+        name: Workshop Playground
         exit_sign: Start Workshop
-    workshop-summary:
-        name: Workshop Summary
+    99-further-information:
+        name: Further Information
         exit_sign: Finish Workshop

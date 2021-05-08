@@ -16,8 +16,8 @@ spec:
     reserved: 0
   workshops:
   - name: lab-et-self-guided-tour
-    expires: 30m
-    orphaned: 5m
+    expires: 60m
+    orphaned: 30m
   - name: lab-et-workshop-playground
-    expires: 120m
+    expires: 60m
     orphaned: 30m
