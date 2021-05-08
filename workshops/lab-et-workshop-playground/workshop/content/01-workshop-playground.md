@@ -2,7 +2,7 @@ This workshop environment provides a gateway to a playground where you can work 
 
 If you are not familiar with how to use the workshop playground skip to the bottom of this page and run through the workshop explaining its usage.
 
-If you do know how to use the workshop playground, the command to use for bundling and pushing up workshop content to the registry for this workshop environment is:
+If you do know how to use the workshop playground, the command to use for bundling and pushing up workshop content to the registry for this workshop session is:
 
 {% if ingress_protocol == 'https' %}
 

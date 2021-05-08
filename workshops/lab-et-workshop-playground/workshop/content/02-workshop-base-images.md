@@ -33,4 +33,4 @@ This should bring up the dashboard for another workshop session, except that the
 
 This is because the workshop sessions for the playground have been configured to pull the workshop content from a registry associated with this workshop session you are currently in, but as yet no workshop content has been loaded.
 
-Dismiss the error dialog and select "Terminate Session" from the drop down menu top right of the dashboard the error was displayed (not this workshop session). You can also click on the <span class="fa fa-sign-out-alt"></span> button in the toolbar of the dashboard. Confirm that you want to terminate the session and return back to the training portal with the various workshop environments displayed.
+Dismiss the error dialog and select "Terminate Session" from the drop down menu top right of the dashboard the error was displayed against, not this workshop session. You can also click on the <span class="fa fa-sign-out-alt"></span> button in the toolbar of the dashboard. Confirm that you want to terminate the session and return back to the training portal with the various workshop environments displayed.

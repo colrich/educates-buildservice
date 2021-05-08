@@ -33,17 +33,17 @@ spec:
         enabled: true
 ```
 
-The ``large`` budget means you use up to 4Gi of memory. Depending on how many applications you may need to deploy to the namespace of the Kubernetes cluster, you may still have to override resource requests and limits for the applications in the deployment resources.
+The ``large`` budget means you can use up to 4Gi of memory. Depending on how many applications you may need to deploy to the namespace of the Kubernetes cluster, you may still have to override resource requests and limits for the applications in the deployment resources.
 
 You will not be able to create deployments using container images that require ``root`` to run.
 
 No persistent storage is provided for the workshop session.
 
-You cannot define Kubernetes resources that are created for the workshop environment as a whole or a specific workshop session.
+You cannot define Kubernetes resources that are to be created for the workshop environment as a whole or a specific workshop session.
 
 You cannot use a custom workshop base image.
 
-If the idea of a playground for working on content is of interest but you need to use a custom workshop image, or want to tailor the workshop definition, you can always copy what this playground does and change the workshop definition.
+If the idea of a playground for working on content is of interest but you need to use a custom workshop image, or want to tailor the workshop definition, you can always copy what this playground does, change the workshop definition and deploy your own playground.
 
 You can see the full workshop definition used at:
 
