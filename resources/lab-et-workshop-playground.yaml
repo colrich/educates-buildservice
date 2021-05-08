@@ -42,10 +42,82 @@ spec:
       metadata:
         name: $(session_namespace)-lab1
       spec:
-        title: Sample Workshop
-        description: My custom workshop
+        title: Standard Environment
+        description: Standard workshop base image.
         content:
-          #files: http://$(session_namespace)-packager.$(workshop_namespace).svc.cluster.local:11111/
+          image: base-environment:*
+          files: imgpkg+$(ingress_protocol)://$(registry_username):$(registry_password)@$(registry_host)/workshop-content:latest
+        session:
+          namespaces:
+            budget: small
+          applications:
+            terminal:
+              enabled: true
+              layout: split
+            console:
+              enabled: true
+              vendor: octant
+            editor:
+              enabled: true
+            examiner:
+              enabled: true
+    - apiVersion: training.eduk8s.io/v1alpha2
+      kind: Workshop
+      metadata:
+        name: $(session_namespace)-lab2
+      spec:
+        title: Java 8 Environment
+        description: Workshop base image for working with Java 8.
+        content:
+          image: jdk8-environment:*
+          files: imgpkg+$(ingress_protocol)://$(registry_username):$(registry_password)@$(registry_host)/workshop-content:latest
+        session:
+          namespaces:
+            budget: small
+          applications:
+            terminal:
+              enabled: true
+              layout: split
+            console:
+              enabled: true
+              vendor: octant
+            editor:
+              enabled: true
+            examiner:
+              enabled: true
+    - apiVersion: training.eduk8s.io/v1alpha2
+      kind: Workshop
+      metadata:
+        name: $(session_namespace)-lab3
+      spec:
+        title: Java 11 Environment
+        description: Workshop base image for working with Java 11.
+        content:
+          image: jdk11-environment:*
+          files: imgpkg+$(ingress_protocol)://$(registry_username):$(registry_password)@$(registry_host)/workshop-content:latest
+        session:
+          namespaces:
+            budget: small
+          applications:
+            terminal:
+              enabled: true
+              layout: split
+            console:
+              enabled: true
+              vendor: octant
+            editor:
+              enabled: true
+            examiner:
+              enabled: true
+    - apiVersion: training.eduk8s.io/v1alpha2
+      kind: Workshop
+      metadata:
+        name: $(session_namespace)-lab4
+      spec:
+        title: Conda Environment
+        description: Workshop base image for working with Anaconda Python.
+        content:
+          image: conda-environment:*
           files: imgpkg+$(ingress_protocol)://$(registry_username):$(registry_password)@$(registry_host)/workshop-content:latest
         session:
           namespaces:
@@ -67,6 +139,7 @@ spec:
         name: $(session_namespace)-labs
       spec:
         portal:
+          password: $(registry_password)
           ingress:
             hostname: $(session_namespace)-labs
           registration:
@@ -76,5 +149,14 @@ spec:
           reserved: 0
         workshops:
         - name: $(session_namespace)-lab1
+          expires: 1h
+          orphaned: 5m
+        - name: $(session_namespace)-lab2
+          expires: 1h
+          orphaned: 5m
+        - name: $(session_namespace)-lab3
+          expires: 1h
+          orphaned: 5m
+        - name: $(session_namespace)-lab4
           expires: 1h
           orphaned: 5m
