@@ -1,49 +1,21 @@
-This workshop environment provides a gateway to a playground where you can work on your own workshop content using one of the available workshop base images, or your own custom workshop image.
+This workshop environment provides a gateway to a playground where you can work on your own workshop content using one of the available workshop base images.
 
 If you are not familiar with how to use the workshop playground skip to the bottom of this page and run through the workshop explaining its usage.
 
-If you do know how to use the workshop playground, to login to the registry, you can use:
-
-```workshop:copy
-text: docker login {{registry_host}} --username={{registry_username}} --password={{registry_password}}
-```
-
-The command to use for bundling and pushing up workshop content to the registry is:
+If you do know how to use the workshop playground, the command to use for bundling and pushing up workshop content to the registry is:
 
 {% if ingress_protocol == 'https' %}
 
 ```workshop:copy
-text: imgpkg push -i {{registry_host}}/workshop-content:latest -f .
+text: imgpkg push -i {{registry_host}}/workshop-content:latest --registry-username={{registry_username}} --registry-password={{registry_password}} -f .
 ```
 {% else %}
 
 ```workshop:copy
-text: imgpkg push -i {{registry_host}}/workshop-content:latest --registry-insecure -f .
+text: imgpkg push -i {{registry_host}}/workshop-content:latest --registry-username={{registry_username}} --registry-password={{registry_password}} --registry-insecure -f .
 ```
 
 {% endif %}
-
-{% if ingress_protocol == 'https' %}
-
-In this workshop environment, as a secure ingress is used you can also use a custom workshop image.
-
-{% else %}
-
-In this workshop environment, as a secure ingress is not being used, you may not be able to use a custom workshop image.
-
-{% endif %}
-
-When using a custom workshop image the command for tagging the custom workshop image is:
-
-```workshop:copy-and-edit
-text: docker tag custom-environment {{registry_host}}/custom-environment:latest
-```
-
-and the command for pushing up the custom workshop image is:
-
-```workshop:copy
-text: docker push {{registry_host}}/custom-environment:latest
-```
 
 The portal for the actual workshop playground can be found at:
 
