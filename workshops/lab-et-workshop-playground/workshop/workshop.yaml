@@ -3,5 +3,6 @@ name: Workshop Content
 modules:
     activate:
     - 01-workshop-playground
-    - 02-using-the-playground
+    - 02-workshop-base-images
+    - 03-uploading-the-content
     - 99-further-information
