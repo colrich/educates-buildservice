@@ -45,8 +45,12 @@ You cannot use a custom workshop base image.
 
 If the idea of a playground for working on content is of interest but you need to use a custom workshop image, or want to tailor the workshop definition, you can always copy what this playground does, change the workshop definition and deploy your own playground.
 
-You can see the full workshop definition used at:
+You can see the full workshop definition and playground command summary used at:
 
 ```dashboard:open-url
 url: https://github.com/eduk8s/eduk8s-tutorials/blob/master/resources/lab-et-workshop-playground.yaml
+```
+
+```dashboard:open-url
+url: https://github.com/eduk8s/eduk8s-tutorials/blob/master/workshops/lab-et-workshop-playground/workshop/content/01-workshop-playground.md
 ```
