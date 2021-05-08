@@ -24,20 +24,6 @@ spec:
     - name: Docs
       url: https://docs.edukates.io
     objects:
-    - apiVersion: v1
-      kind: Service
-      metadata:
-        name: $(session_namespace)-packager
-        namespace: $(workshop_namespace)
-      spec:
-        type: ClusterIP
-        ports:
-        - name: 11111-tcp
-          port: 11111
-          targetPort: 11111
-          protocol: TCP
-        selector:
-          deployment: $(session_namespace)
     - apiVersion: training.eduk8s.io/v1alpha2
       kind: Workshop
       metadata:
@@ -50,7 +36,7 @@ spec:
           files: imgpkg+$(ingress_protocol)://$(registry_username):$(registry_password)@$(registry_host)/workshop-content:latest
         session:
           namespaces:
-            budget: small
+            budget: large
           applications:
             terminal:
               enabled: true
@@ -78,7 +64,7 @@ spec:
           files: imgpkg+$(ingress_protocol)://$(registry_username):$(registry_password)@$(registry_host)/workshop-content:latest
         session:
           namespaces:
-            budget: small
+            budget: large
           applications:
             terminal:
               enabled: true
@@ -106,7 +92,7 @@ spec:
           files: imgpkg+$(ingress_protocol)://$(registry_username):$(registry_password)@$(registry_host)/workshop-content:latest
         session:
           namespaces:
-            budget: small
+            budget: large
           applications:
             terminal:
               enabled: true
@@ -134,7 +120,7 @@ spec:
           files: imgpkg+$(ingress_protocol)://$(registry_username):$(registry_password)@$(registry_host)/workshop-content:latest
         session:
           namespaces:
-            budget: small
+            budget: large
           applications:
             terminal:
               enabled: true

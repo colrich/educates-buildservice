@@ -8,6 +8,8 @@ modules:
         name: Uploading the Content
     04-working-on-content:
         name: Working on Content
+    05-playground-features:
+        name: Playground Features
     99-further-information:
         name: Further Information
         exit_sign: Finish Workshop

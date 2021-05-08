@@ -6,4 +6,5 @@ modules:
     - 02-workshop-base-images
     - 03-uploading-the-content
     - 04-working-on-content
+    - 05-playground-features
     - 99-further-information
