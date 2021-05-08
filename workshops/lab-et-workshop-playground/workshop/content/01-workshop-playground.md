@@ -33,7 +33,7 @@ In this workshop environment, as a secure ingress is not being used, you may not
 
 {% endif %}
 
-If you are able to use a custom workshop image the command for tagging the custom workshop image is:
+When using a custom workshop image the command for tagging the custom workshop image is:
 
 ```workshop:copy-and-edit
 text: docker tag custom-environment {{registry_host}}/custom-environment:latest
