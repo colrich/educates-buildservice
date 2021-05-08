@@ -65,7 +65,8 @@ spec:
         name: $(session_namespace)-labs
       spec:
         portal:
-          name: $(session_namespace)-labs
+          ingress:
+            hostname: $(session_namespace)-labs
           registration:
             type: anonymous
           sessions:
