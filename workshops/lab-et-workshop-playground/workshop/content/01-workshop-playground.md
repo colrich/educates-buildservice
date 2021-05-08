@@ -7,13 +7,13 @@ If you do know how to use the workshop playground, the command to use for pushin
 {% if ingress_protocol == 'http' %}
 
 ```workshop:copy
-text: imgpkg push -i {{registry_host}}/workshop-content:latest -f lab-markdown-sample --registry-username={{registry_username}} --registry-password={{registry_password}} --registry-insecure
+text: imgpkg push -i {{registry_host}}/workshop-content:latest --registry-username={{registry_username}} --registry-password={{registry_password}} --registry-insecure -f .
 ```
 
 {% else %}
 
 ```workshop:copy
-text: imgpkg push -i {{registry_host}}/workshop-content:latest -f lab-markdown-sample --registry-username={{registry_username}} --registry-password={{registry_password}}
+text: imgpkg push -i {{registry_host}}/workshop-content:latest --registry-username={{registry_username}} --registry-password={{registry_password}} -f .
 ```
 
 {% endif %}
