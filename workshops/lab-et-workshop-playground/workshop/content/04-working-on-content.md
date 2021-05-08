@@ -5,7 +5,7 @@ The process of working on content within the playground then becomes:
 * Terminate the existing playground workshop session if still running.
 * Start a new playground workshop session.
 
-You would cycle through this process until you are happy with the changes, then committing your changes back to your source code repository.
+You would cycle through this process until you are happy with the changes, then commit your changes back to your source code repository.
 
 Each time you go through this cycle the existing workshop session is terminated and a new one created with the updated version of the workshop content.
 

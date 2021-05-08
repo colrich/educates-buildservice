@@ -36,4 +36,4 @@ What this does it package up the workshop content as an OCI image artifact.
 
 This is like a container image except that all it has in it is the workshop content, there are no operating system files in the image.
 
-Head back to the training portal for the playgrounds and click on "Standard Environment" again. This time the workshop should come up successfully with the workshop content from the Git repository we checked out locally.
+Head back to the training portal for the playgrounds and click on "Standard Environment" again. This time the workshop should come up successfully with the workshop content from the Git repository we checked out within this workshop session.

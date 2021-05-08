@@ -9,7 +9,7 @@ When you access the training portal instance for your playground, you can select
 
 Although there are multiple workshop images, the training portal instance has been configured to only allow you to run one at a time. The workshop session using that workshop image will also only be created on demand.
 
-Open up a separte browser window for the training portal instance for the playground.
+Open up a separate browser window for the training portal instance for the playground.
 
 ```dashboard:open-url
 url: {{ingress_protocol}}://{{session_namespace}}-labs.{{ingress_domain}}
