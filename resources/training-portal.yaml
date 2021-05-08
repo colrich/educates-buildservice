@@ -10,10 +10,10 @@ spec:
     ingress:
       hostname: eduk8s-tutorials
     sessions:
-      maximum: 5
+      maximum: 1
     updates:
       workshop: true
-    reserved: 1
+    reserved: 0
   workshops:
   - name: lab-et-self-guided-tour
     expires: 30m
