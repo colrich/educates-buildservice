@@ -6,6 +6,8 @@ modules:
         name: Workshop Base Images
     03-uploading-the-content:
         name: Uploading the Content
+    04-working-on-content:
+        name: Working on Content
     99-further-information:
         name: Further Information
         exit_sign: Finish Workshop
