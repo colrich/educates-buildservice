@@ -2,18 +2,23 @@ This workshop environment provides a gateway to a playground where you can work 
 
 If you are not familiar with how to use the workshop playground skip to the bottom of this page and run through the workshop explaining its usage.
 
-If you do know how to use the workshop playground, the command to use for pushing up workshop content to the bundled registry is:
-
-{% if ingress_protocol == 'http' %}
+If you do know how to use the workshop playground, to login to the registry, you can use:
 
 ```workshop:copy
-text: imgpkg push -i {{registry_host}}/workshop-content:latest --registry-username={{registry_username}} --registry-password={{registry_password}} --registry-insecure -f .
+text: docker login {{registry_host}} --username={{registry_username}} --password={{registry_password}}
 ```
 
+The command to use for bundling and pushing up workshop content to the registry is:
+
+{% if ingress_protocol == 'https' %}
+
+```workshop:copy
+text: imgpkg push -i {{registry_host}}/workshop-content:latest -f .
+```
 {% else %}
 
 ```workshop:copy
-text: imgpkg push -i {{registry_host}}/workshop-content:latest --registry-username={{registry_username}} --registry-password={{registry_password}} -f .
+text: imgpkg push -i {{registry_host}}/workshop-content:latest --registry-insecure -f .
 ```
 
 {% endif %}
@@ -28,13 +33,7 @@ In this workshop environment, as a secure ingress is not being used, you may not
 
 {% endif %}
 
-If you are able to use a custom workshop image the command for logging in to the bundled registry is:
-
-```workshop:copy
-text: docker login {{registry_host}} --username={{registry_username}} --password={{registry_password}}
-```
-
-The command for tagging the custom workshop image is:
+If you are able to use a custom workshop image the command for tagging the custom workshop image is:
 
 ```workshop:copy-and-edit
 text: docker tag custom-environment {{registry_host}}/custom-environment:latest
