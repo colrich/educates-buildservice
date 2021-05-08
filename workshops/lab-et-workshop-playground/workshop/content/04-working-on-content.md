@@ -1,6 +1,6 @@
 The process of working on content within the playground then becomes:
 
-* Make modifications to workshop content.
+* Make modifications to the workshop content.
 * Upload the workshop content to the playground registry using ``imgpkg``.
 * Terminate the existing playground workshop session if still running.
 * Start a new playground workshop session.
@@ -56,7 +56,7 @@ Doing an in place update on the workshop content in this way means that if the w
 
 Note that using ``update-workshop`` will not always alone be enough, such as if new pages of instructions were added, or pages were renamed. In this case you will need to restart the workshop renderer so that it can re-read the configuration about what pages there are. To handle this case you will also need to run ``restart-workshop``, then refresh the page.
 
-For more details on using these and others scripts you can use when working on workshop content in a live workshop session, as well as other tips, see:
+For more details on these and others scripts you can use when working on workshop content in a live workshop session, as well as other related tips, see:
 
 ```dashboard:reload-dashboard
 name: Docs
