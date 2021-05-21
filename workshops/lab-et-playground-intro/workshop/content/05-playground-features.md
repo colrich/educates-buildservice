@@ -6,10 +6,10 @@ The canonical workshop definition is:
 apiVersion: training.eduk8s.io/v1alpha2
 kind: Workshop
 metadata:
-  name: $(session_namespace)-lab1
+  name: $(session_namespace)-playground
 spec:
-  title: Standard Environment
-  description: Standard workshop base image.
+  title: Playground
+  description: Creates the playground.
   content:
     image: base-environment:*
     files: imgpkg+$(ingress_protocol)://$(registry_username):$(registry_password)@$(registry_host)/workshop-content:latest
@@ -45,12 +45,14 @@ You cannot use a custom workshop base image.
 
 If the idea of a playground for working on content is of interest but you need to use a custom workshop image, or want to tailor the workshop definition, you can always copy what this playground does, change the workshop definition and deploy your own playground.
 
-You can see the full workshop definition and playground command summary used at:
+You can see the full workshop definition at:
 
 ```dashboard:open-url
-url: https://github.com/eduk8s/eduk8s-tutorials/blob/master/resources/lab-et-workshop-playground.yaml
+url: https://github.com/eduk8s/eduk8s-tutorials/blob/master/resources/lab-et-basic-playground.yaml
 ```
 
+and how the playground command summary is constructed at:
+
 ```dashboard:open-url
-url: https://github.com/eduk8s/eduk8s-tutorials/blob/master/workshops/lab-et-workshop-playground/workshop/content/01-workshop-playground.md
+url: https://github.com/eduk8s/eduk8s-tutorials/blob/master/workshops/lab-et-playground-intro/workshop/content/01-workshop-playground.md
 ```

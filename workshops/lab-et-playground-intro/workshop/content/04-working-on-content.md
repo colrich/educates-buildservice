@@ -52,7 +52,9 @@ text: update-workshop
 
 Refresh the browser window for the playground workshop session and you should see the additional paragraph of text.
 
-Doing an in place update on the workshop content in this way means that if the workshop involves having to deploy an application to the Kubernetes cluster, that you don't have to go through all the prior steps again. Depending on what you are re-testing, you may need to manually undo the result of previously running the same step. This is something you will need to work out depending on what your workshop is about. If you can't you would need to terminate the workshop session and start over.
+Doing an in place update on the workshop content in this way means that if the workshop involves having to deploy an application to the Kubernetes cluster, that you don't have to go through all the prior steps again.
+
+Depending on what you are re-testing, you may though need to manually undo the result of previously running the same step. This is something you will need to work out depending on what your workshop is about. If you can't you would need to terminate the workshop session and start over.
 
 Note that using ``update-workshop`` will not always alone be enough, such as if new pages of instructions were added, or pages were renamed. In this case you will need to restart the workshop renderer so that it can re-read the configuration about what pages there are. To handle this case you will also need to run ``restart-workshop``, then refresh the page.
 
