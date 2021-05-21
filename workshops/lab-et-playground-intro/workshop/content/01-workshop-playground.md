@@ -24,16 +24,16 @@ text: imgpkg push -i {{registry_host}}/workshop-content:latest --registry-userna
 
 {% endif %}
 
+The portal for the workshop playground can be accessed at:
+
+```dashboard:open-url
+url: {{ingress_protocol}}://{{session_namespace}}-playground.{{ingress_domain}}
+```
+
 The password for the portal giving access to the workshop playground is:
 
 ```workshop:copy
 text: {{registry_password}}
-```
-
-The portal for the workshop playground can be accessed at:
-
-```dashboard:open-url
-url: {{ingress_protocol}}://{{session_namespace}}-labs.{{ingress_domain}}
 ```
 
 Remember that you need to keep this browser page open and cannot close it otherwise the workshop playground will be removed automatically after a period of time. You will need to extend the session for this workshop environment if time starts to run out. This can be done by clicking on the countdown timer when it turns red.

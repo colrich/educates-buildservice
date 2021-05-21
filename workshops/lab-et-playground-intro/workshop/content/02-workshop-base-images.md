@@ -1,18 +1,20 @@
-The way that the workshop playground works is that when you are given this workshop session which acts as the gateway to the playground, an instance of an Educates training portal is created just for your workshop session. This training portal is configured with a set of workshops, each corresponding to a different one of the supplied workshop base images. These workshop base images are:
+The way that the workshop playground works is that when you are given this workshop session which acts as the gateway to the playground, a separate instance of an Educates training portal is created just for your workshop session. This training portal is configured with a single workshop using a specific workshop base image.
 
-* ``base-environment`` - Standard workshop base image.
+Workshop base images that Educates provides include the following:
+
+* ``base-environment`` - Basic workshop base image.
 * ``jdk8-environment`` - Workshop base image for working with Java 8.
 * ``jdk11-environment`` - Workshop base image for working with Java 11.
 * ``conda-environment`` - Workshop base image for working with Anaconda Python.
 
-When you access the training portal instance for your playground, you can select which of the workshop images you want to work with.
+but the workshop image could also be a custom workshop base image with additional tools.
 
-Although there are multiple workshop images, the training portal instance has been configured to only allow you to run one at a time. The workshop session using that workshop image will also only be created on demand.
+Exactly which workshop base image is being used for this workshop playground will depend on which you selected when you initially created this workshop session.
 
-Open up a separate browser window for the training portal instance for the playground.
+To open up a separate browser window for the training portal instance for the playground click below.
 
 ```dashboard:open-url
-url: {{ingress_protocol}}://{{session_namespace}}-labs.{{ingress_domain}}
+url: {{ingress_protocol}}://{{session_namespace}}-playground.{{ingress_domain}}
 ```
 
 The password for the training portal is:
