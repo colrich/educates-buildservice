@@ -69,5 +69,3 @@ spec:
           reserved: 0
         workshops:
         - name: $(session_namespace)-playground
-          expires: 1h
-          orphaned: 5m
