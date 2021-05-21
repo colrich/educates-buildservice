@@ -32,7 +32,7 @@ command: imgpkg push -i {{registry_host}}/workshop-content:latest --registry-use
 
 {% endif %}
 
-What this does it package up the workshop content as an OCI image artifact.
+What this does is package up the workshop content as an OCI image artifact and push it to the registry.
 
 This is like a container image except that all it has in it is the workshop content, there are no operating system files in the image.
 

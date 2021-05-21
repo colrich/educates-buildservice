@@ -51,8 +51,8 @@ You can see the full workshop definition at:
 url: https://github.com/eduk8s/eduk8s-tutorials/blob/master/resources/lab-et-basic-playground.yaml
 ```
 
-and how the playground command summary is constructed at:
+and the content for this workshop can be found at:
 
 ```dashboard:open-url
-url: https://github.com/eduk8s/eduk8s-tutorials/blob/master/workshops/lab-et-playground-intro/workshop/content/01-workshop-playground.md
+url: https://github.com/eduk8s/eduk8s-tutorials/blob/master/workshops/lab-et-playground-intro
 ```
