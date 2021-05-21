@@ -1,7 +1,7 @@
 modules:
     01-workshop-playground:
         name: Workshop Playground
-        exit_sign: Start Workshop
+        exit_sign: Explore Playground
     02-workshop-base-images:
         name: Workshop Base Images
     03-uploading-the-content:
@@ -12,4 +12,4 @@ modules:
         name: Playground Features
     99-further-information:
         name: Further Information
-        exit_sign: Finish Workshop
+        exit_sign: Terminate Playground

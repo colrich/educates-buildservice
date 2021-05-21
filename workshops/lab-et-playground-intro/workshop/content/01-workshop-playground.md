@@ -1,6 +1,6 @@
 This workshop environment provides a gateway to a playground where you can work on your own workshop content using one of the available workshop base images.
 
-If you are not familiar with how to use the workshop playground click on "Continue" at the bottom of this page and run through the workshop explaining its usage.
+If you are not familiar with how to use the workshop playground click on "Explore Playground" at the bottom of this page and run through the workshop explaining its usage.
 
 If you are familiar with how to use the workshop playground click below to reveal the command for packaging up workshop content and accessing the playground.
 
