@@ -16,8 +16,17 @@ spec:
     reserved: 0
   workshops:
   - name: lab-et-self-guided-tour
-    expires: 60m
-    orphaned: 30m
-  - name: lab-et-workshop-playground
-    expires: 60m
-    orphaned: 30m
+    expires: 30m
+    orphaned: 10m
+  - name: lab-et-basic-playground
+    expires: 6h
+    orphaned: 1h
+  - name: lab-et-jdk8-playground
+    expires: 6h
+    orphaned: 1h
+  - name: lab-et-jdk11-playground
+    expires: 6h
+    orphaned: 1h
+  - name: lab-et-conda-playground
+    expires: 6h
+    orphaned: 1h

@@ -3,5 +3,8 @@ kind: Kustomization
 
 resources:
 - resources/lab-et-self-guided-tour.yaml
-- resources/lab-et-workshop-playground.yaml
+- resources/lab-et-basic-playground.yaml
+- resources/lab-et-jdk8-playground.yaml
+- resources/lab-et-jdk11-playground.yaml
+- resources/lab-et-conda-playground.yaml
 - resources/training-portal.yaml
