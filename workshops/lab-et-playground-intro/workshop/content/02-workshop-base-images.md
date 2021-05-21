@@ -25,9 +25,9 @@ text: {{registry_password}}
 
 Once you have entered in the password, the training portal for the playground should look like:
 
-![](workshop-playground-environments.png)
+![](workshop-playground-portal.png)
 
-Click on "Start Workshop" for the "Standard Environment".
+Click on "Start Workshop" for the "Playground".
 
 This should bring up the dashboard for another workshop session, except that there will be an error popup complaining that the workshop content could not be downloaded.
 
