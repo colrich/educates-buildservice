@@ -9,7 +9,7 @@ prefix: Playground
 title: Command Summary
 ```
 
-The command to use for bundling and pushing up workshop content to the registry for this workshop session is:
+The command to use for bundling and pushing up workshop content to the registry for this playground session is:
 
 {% if ingress_protocol == 'https' %}
 
