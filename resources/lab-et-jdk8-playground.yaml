@@ -8,7 +8,7 @@ spec:
   description: Workshop playground for jdk8 environment.
   url: https://github.com/eduk8s/eduk8s-tutorials
   content:
-    files: github.com/eduk8s/eduk8s-tutorials/workshops/lab-et-basic-playground
+    files: github.com/eduk8s/eduk8s-tutorials/workshops/lab-et-playground-intro
   session:
     namespaces:
       budget: small
