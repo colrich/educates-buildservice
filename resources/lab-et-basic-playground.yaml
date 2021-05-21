@@ -61,7 +61,7 @@ spec:
           title: Playgrounds
           password: $(registry_password)
           ingress:
-            hostname: $(session_namespace)-playgrounds
+            hostname: $(session_namespace)-playground
           registration:
             type: anonymous
           sessions:
