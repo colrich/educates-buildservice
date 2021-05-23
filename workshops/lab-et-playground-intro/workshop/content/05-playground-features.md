@@ -48,11 +48,11 @@ If the idea of a playground for working on content is of interest but you need t
 You can see the full workshop definition at:
 
 ```dashboard:open-url
-url: https://github.com/eduk8s/eduk8s-tutorials/blob/master/resources/lab-et-basic-playground.yaml
+url: https://github.com/educates/educates-tutorials/blob/master/resources/lab-et-basic-playground.yaml
 ```
 
 and the content for this workshop can be found at:
 
 ```dashboard:open-url
-url: https://github.com/eduk8s/eduk8s-tutorials/blob/master/workshops/lab-et-playground-intro
+url: https://github.com/educates/educates-tutorials/blob/master/workshops/lab-et-playground-intro
 ```

@@ -3,12 +3,11 @@ kind: Workshop
 metadata:
   name: lab-workshop-deployment
 spec:
-  vendor: eduk8s.io
   title: Workshop Deployment
   description: Workshop on how to deploy/manage Educates workshops
-  url: https://github.com/eduk8s/eduk8s-tutorials
+  url: https://github.com/educates/educates-tutorials
   content:
-    files: github.com/eduk8s/eduk8s-tutorials/workshops/lab-workshop-deployment
+    files: github.com/educates/educates-tutorials/workshops/lab-workshop-deployment
   session:
     namespaces:
       budget: medium

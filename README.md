@@ -22,13 +22,13 @@ Deployment
 To deploy the Educates tutorials run:
 
 ```
-kubectl apply -k github.com/eduk8s/eduk8s-tutorials
+kubectl apply -k github.com/educates/educates-tutorials
 ```
 
 Then run:
 
 ```
-kubectl get trainingportal/eduk8s-tutorials
+kubectl get trainingportal/educates-tutorials
 ```
 
 This will output the URL and login credentials to access the web portal for
@@ -40,5 +40,5 @@ Deletion
 To delete the training portal deployment, run:
 
 ```
-kubectl delete -k github.com/eduk8s/eduk8s-tutorials
+kubectl delete -k github.com/educates/educates-tutorials
 ```

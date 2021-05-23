@@ -3,12 +3,11 @@ kind: Workshop
 metadata:
   name: lab-et-jdk11-playground
 spec:
-  vendor: eduk8s.io
   title: JDK11 Playground
   description: Workshop playground for jdk11 environment.
-  url: https://github.com/eduk8s/eduk8s-tutorials
+  url: https://github.com/educates/educates-tutorials
   content:
-    files: github.com/eduk8s/eduk8s-tutorials/workshops/lab-et-playground-intro
+    files: github.com/educates/educates-tutorials/workshops/lab-et-playground-intro
   session:
     namespaces:
       budget: small
