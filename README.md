@@ -1,20 +1,9 @@
 Educates Tutorials
 ==================
 
-This repository contains a set of workshops for educates which aims to guide
-you through how to deploy workshops with Educates on Kubernetes, and how to
-create your own custom workshops.
-
-Warning
--------
-
-The workshops should only be deployed on private instances of Kubernetes such
-as a local instances of Minikube, K3s and Kind, or other disposable Kubernetes
-cluster that can be deleted once the workshop has been completed. This is
-because although the workshop environment user does not have any elevated
-privileges in the Kubernetes cluster, the user can indirectly deploy Educates
-workshops to the cluster that may grant elevated privileges. Do not therefore
-deploy these workshops to a production cluster.
+This repository contains a set of workshops for learning about Educates
+and for providing a playground which can be used to work on Educates
+workshop content.
 
 Prerequisites
 -------------
@@ -30,16 +19,10 @@ For installation instructions for the Educates operator see:
 Deployment
 ----------
 
-To load the workshop definition run:
+To deploy the Educates tutorials run:
 
 ```
-kubectl apply -f https://raw.githubusercontent.com/eduk8s/eduk8s-tutorials/master/resources/lab-workshop-deployment.yaml
-```
-
-To deploy a training portal for accessing the workshop, run:
-
-```
-kubectl apply -f https://raw.githubusercontent.com/eduk8s/eduk8s-tutorials/master/resources/training-portal.yaml
+kubectl apply -k github.com/eduk8s/eduk8s-tutorials
 ```
 
 Then run:
@@ -57,33 +40,5 @@ Deletion
 To delete the training portal deployment, run:
 
 ```
-kubectl delete -f https://raw.githubusercontent.com/eduk8s/eduk8s-tutorials/master/resources/training-portal.yaml
+kubectl delete -k github.com/eduk8s/eduk8s-tutorials
 ```
-
-When you are finished with the workshop definition, you can delete it by running:
-
-```
-kubectl delete -f https://raw.githubusercontent.com/eduk8s/eduk8s-tutorials/master/resources/lab-workshop-deployment.yaml
-```
-
-If you deployed any workshops from the workshop environment, and did not
-delete them as per the instructions provided in the workshop, you will need
-to delete them manually.
-
-To see what workshops are deployed run:
-
-```
-kubectl get trainingportals
-```
-
-Identify those which were created due to running the workshop, and delete
-the corresponding ``trainingportal`` resource.
-
-You will also need to run:
-
-```
-kubectl get workshops
-```
-
-and delete any ``workshop`` resource for workshop definitions created as part
-of the workshop.
