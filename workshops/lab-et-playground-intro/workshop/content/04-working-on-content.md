@@ -26,7 +26,7 @@ text: |
   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eget auctor purus, ac pellentesque magna. In laoreet et quam quis viverra. Praesent venenatis lacus eget leo elementum venenatis. Etiam vel venenatis sem, a molestie lorem.
 ```
 
-Upload the modified workshop content to the playground registry.
+Ensure that any file changes are saved and then upload the modified workshop content to the playground registry.
 
 {% if ingress_protocol == 'http' %}
 
