@@ -5,9 +5,9 @@ metadata:
 spec:
   title: Workshop Deployment
   description: Workshop on how to deploy/manage Educates workshops
-  url: https://github.com/educates/educates-tutorials
+  url: https://github.com/colrich/educates-buildservice
   content:
-    files: github.com/educates/educates-tutorials/workshops/lab-workshop-deployment
+    files: github.com/colrich/educates-buildservice/workshops/lab-workshop-deployment
   session:
     namespaces:
       budget: medium

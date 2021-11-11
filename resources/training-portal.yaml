@@ -1,14 +1,14 @@
 apiVersion: training.eduk8s.io/v1alpha1
 kind: TrainingPortal
 metadata:
-  name: educates-tutorials
+  name: educates-buildservice
 spec:
   portal:
     password: educates
     registration:
       type: anonymous
     ingress:
-      hostname: educates-tutorials
+      hostname: educates-buildservice
     sessions:
       maximum: 1
     updates:
